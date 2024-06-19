@@ -33,7 +33,12 @@ router.get("/projects", (req, res) => {
 router.get("/week", (req, res) => {
   res.render("week");
 });
-
+router.get("/reset", (req, res) => {
+  res.render("reset");
+});
+router.get("/forgot", (req, res) => {
+  res.render("forgot");
+});
 router.post("/login", userController.log);
 router.post("/submit", userController.reg);
 
