@@ -33,9 +33,6 @@ router.get("/week", (req, res) => {
   res.render("week");
 });
 
-router.get("/projects", (req, res) => {
-  res.render("projects");
-});
 
 router.post("/login", userController.log);
 router.post("/submit", userController.reg);
