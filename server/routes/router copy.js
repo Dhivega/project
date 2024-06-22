@@ -13,6 +13,11 @@ router.get("/register", (req, res) => {
 router.get("/login", (req, res) => {
   res.render("login");
 });
+
+router.get("/forgot", (req, res) => {
+  res.render("forgot");
+});
+
 router.get("/admin", (req, res) => {
   res.render("admin");
 });
@@ -21,20 +26,12 @@ router.get("/progress", (req, res) => {
   res.render("progress");
 });
 
-router.get("/forgot", (req, res) => {
-  res.render("forgot");
-});
-
-router.get("/demo", (req, res) => {
-  res.render("demo");
+router.get("/projects", (req, res) => {
+  res.render("projects");
 });
 
 router.get("/week", (req, res) => {
   res.render("week");
-});
-
-router.get("/projects", (req, res) => {
-  res.render("projects");
 });
 
 router.post("/login", userController.log);
@@ -59,6 +56,11 @@ router.get("/projects-data", userController.getAllProjects);
 
 router.get("/progress-data", userController.getAllProgress);
 router.put("/update-progress", userController.updateProgress);
+// router.post("/add-progress", userController.addprogress);
+
+router.get("/users-data", userController.getUsers);
+
+router.get("/projects-data", userController.getProjects);
 
 router.get("/report-data", userController.getreport);
 

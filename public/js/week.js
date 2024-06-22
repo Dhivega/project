@@ -113,11 +113,11 @@ function renderUsers() {
       <td>${user.activity_Type}</td>
       <td>${user.subsidiary}</td>
       <td>${user.Complementary_desc}</td>
-      <td><input type='number' class='form-control' /></td>
-      <td><input type='number' class='form-control' /></td>
-      <td><input type='number' class='form-control' /></td>
-      <td><input type='number' class='form-control' /></td>
-      <td><input type='number' class='form-control' /></td>
+      <td><input type='number' class='form-control' value = "" /></td>
+      <td><input type='number' class='form-control' value = "" /></td>
+      <td><input type='number' class='form-control' value = ""/></td>
+      <td><input type='number' class='form-control' value = ""/></td>
+      <td><input type='number' class='form-control' value = ""/></td>
     `;
     tableBody.appendChild(row);
   });
